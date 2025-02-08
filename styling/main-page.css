@@ -10,20 +10,24 @@ body
 .frame-container
 {
   border: 10px solid #ba9bff;
+  border-radius: 35px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
   padding: 20px;
   width: 700px;
   height: 700px;
   justify-content: center;
   align-items: center;
-  background-color: #ed7ed7;
+  background-color: #f79ae4;
   margin-left: 120px;
 }
 
 .div-pomodoro-timer-header 
 {
-  border: 10px solid #ba9bff;
+  border: 5px outset #ba9bff;
   border-radius: 35px;
+  background-color: #f79ae4;
+  box-shadow: inset 0 0 15px #ba9bff,
+              inset 0 0 15px  #f79ae4;
   width: auto;
   height: auto;
   font-family: "Gamja Flower", serif;
@@ -36,9 +40,9 @@ body
 
 }
 
-.div-timer-display
+/*.div-timer-display
 {
-  border: 10px solid #c2ff60bb;
+  border: 10px solid  #ba9bff;
   border-radius: 35px;
   width: auto;
   font-family: "Gamja Flower", serif;
@@ -48,20 +52,32 @@ body
   color: white;
   justify-content: center;
   align-items: center;
+}*/
+.div-timer-display {
+  border: 5px inset #ba9bff;
+  border-radius: 35px;
+  background-color: #f79ae4;
+  box-shadow: inset 0 0 15px #ba9bff,
+              inset 0 0 15px  #f79ae4;
+  font-family: "Gamja Flower", serif;
+  font-size: 70px;
+  text-align: center;
+  margin: 10px auto;
+  color: white;
+  padding: 10px;
 }
-
 .start-button, .pause-button, .reset-button
 {
   border: none;
   border-radius: 50px;
-  background: linear-gradient(145deg, #9cc7ff, #45a0f5);
+  background: linear-gradient(145deg, #9cc7ff, #b3daff);
   width: 130px;
   height: 50px;
   color: white;
   font-family: "Gamja Flower", serif;
   font-size: 20px;
   font-weight: bold;
-  margin-top: 100px;
+  margin: 18px auto;
   position: relative;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 3px 5px rgba(0, 0, 0, 0.1);  /* Soft shadow for the cloud effect */
   cursor: pointer;
@@ -70,11 +86,43 @@ body
   align-items: center;
   margin-left: 70px;
 }
+
 .start-button:hover, .pause-button:hover, .reset-button:hover {
   transform: translateY(-5px);  /* Slight lift effect on hover */
 }
 
+/*Button press effect when clicked*/
 .start-button:active, .pause-button:active, .reset-button:active {
   transform: scale(0.9);
   transition: transform 0.1s ease;
+}
+
+.checklist-container
+{
+  border: 5px outset #ba9bff;
+  border-radius: 35px;
+  background-color: #f79ae4;
+  box-shadow: inset 0 0 15px #ba9bff,
+              inset 0 0 15px  #f79ae4;
+  width: auto;
+  height: auto;
+  font-family: "Gamja Flower", serif;
+  font-size: 20px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background: repeating-linear-gradient(
+    white 0px, 
+    white 30px, 
+    #e0e0e0 31px
+  ); /* Light grey lines */
+  border: 5px solid #ba9bff; 
+  border-radius: 15px;
+  padding: 20px;
+  width: 400px;
+  height: auto;
+  font-family: "Gamja Flower", cursive;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
