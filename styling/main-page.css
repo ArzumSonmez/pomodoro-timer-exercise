@@ -1,0 +1,80 @@
+body
+{
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.frame-container
+{
+  border: 10px solid #ba9bff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  padding: 20px;
+  width: 700px;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ed7ed7;
+  margin-left: 120px;
+}
+
+.div-pomodoro-timer-header 
+{
+  border: 10px solid #ba9bff;
+  border-radius: 35px;
+  width: auto;
+  height: auto;
+  font-family: "Gamja Flower", serif;
+  font-size: 20px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+.div-timer-display
+{
+  border: 10px solid #c2ff60bb;
+  border-radius: 35px;
+  width: auto;
+  font-family: "Gamja Flower", serif;
+  font-size: 70px;
+  text-align: center;
+  margin: 10px auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-button, .pause-button, .reset-button
+{
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #9cc7ff, #45a0f5);
+  width: 130px;
+  height: 50px;
+  color: white;
+  font-family: "Gamja Flower", serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 100px;
+  position: relative;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 3px 5px rgba(0, 0, 0, 0.1);  /* Soft shadow for the cloud effect */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+}
+.start-button:hover, .pause-button:hover, .reset-button:hover {
+  transform: translateY(-5px);  /* Slight lift effect on hover */
+}
+
+.start-button:active, .pause-button:active, .reset-button:active {
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+}
