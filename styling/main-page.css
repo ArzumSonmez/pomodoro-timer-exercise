@@ -5,6 +5,7 @@ body
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: beige;
 }
 
 .frame-container
@@ -28,13 +29,13 @@ body
   height: 100%; /* This makes it wrap the content height */
   pointer-events: none;  /* Prevent interaction with SVG */
 }
-
+/* #295F98*/
 .div-pomodoro-timer-header 
 {
-  border: 2px solid rgb(175, 255, 175);
+  border: 2px;
   border-radius: 35px;
   box-shadow: 0 0 3px 3px pink;
-  background-color: #00CCDD;
+  background-color: #71aef0;
   width: 600px;
   height: 70px;
   font-family: "Gamja Flower", serif;
@@ -44,7 +45,7 @@ body
   justify-content: center;
   align-items: center;
   text-align: center;
-  line-height: 10px;
+  line-height: 70px;
   margin: 30px auto;
 }
 
@@ -62,10 +63,10 @@ body
   align-items: center;
 }*/
 .div-timer-display {
-  border: 2px solid rgb(175, 255, 175);
+  /*border: 2px solid rgb(175, 255, 175);*/
   border-radius: 35px;
   box-shadow: 0 0 3px 3px pink;
-  background-color: #00CCDD;
+  background-color: #a8c4fd;
   width: 600px;
   height: 70px;
   font-family: "Gamja Flower", serif;
