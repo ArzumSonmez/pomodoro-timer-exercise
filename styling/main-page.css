@@ -9,35 +9,43 @@ body
 
 .frame-container
 {
-  border: 10px solid #ba9bff;
-  border-radius: 35px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
   padding: 20px;
   width: 700px;
   height: 700px;
   justify-content: center;
   align-items: center;
-  background-color: #f79ae4;
+  background-color: #FAF3F0;
   margin-left: 120px;
+}
+
+.rectangle-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;  /* This makes it wrap the content width */
+  height: 100%; /* This makes it wrap the content height */
+  pointer-events: none;  /* Prevent interaction with SVG */
 }
 
 .div-pomodoro-timer-header 
 {
-  border: 5px outset #ba9bff;
+  border: 2px solid rgb(175, 255, 175);
   border-radius: 35px;
-  background-color: #f79ae4;
-  box-shadow: inset 0 0 15px #ba9bff,
-              inset 0 0 15px  #f79ae4;
-  width: auto;
-  height: auto;
+  box-shadow: 0 0 3px 3px pink;
+  background-color: #00CCDD;
+  width: 600px;
+  height: 70px;
   font-family: "Gamja Flower", serif;
   font-size: 20px;
-  color: white;
+  color: white; 
+  display: flexbox;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
-
+  line-height: 10px;
+  margin: 30px auto;
 }
 
 /*.div-timer-display
@@ -54,38 +62,52 @@ body
   align-items: center;
 }*/
 .div-timer-display {
-  border: 5px inset #ba9bff;
+  border: 2px solid rgb(175, 255, 175);
   border-radius: 35px;
-  background-color: #f79ae4;
-  box-shadow: inset 0 0 15px #ba9bff,
-              inset 0 0 15px  #f79ae4;
+  box-shadow: 0 0 3px 3px pink;
+  background-color: #00CCDD;
+  width: 600px;
+  height: 70px;
   font-family: "Gamja Flower", serif;
   font-size: 70px;
+  line-height: 70px;
   text-align: center;
   margin: 10px auto;
   color: white;
-  padding: 10px;
 }
 .start-button, .pause-button, .reset-button
+{
+  border: none;
+  background: none;
+  padding: 0;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  
+  font-family: "Gamja Flower", serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-left: 20px;
+}
+/*.pause-button, .reset-button
 {
   border: none;
   border-radius: 50px;
   background: linear-gradient(145deg, #9cc7ff, #b3daff);
   width: 130px;
   height: 50px;
-  color: white;
-  font-family: "Gamja Flower", serif;
-  font-size: 20px;
-  font-weight: bold;
+  
   margin: 18px auto;
   position: relative;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 3px 5px rgba(0, 0, 0, 0.1);  /* Soft shadow for the cloud effect */
-  cursor: pointer;
+  /*cursor: pointer;
   transition: all 0.3s ease;
   justify-content: center;
   align-items: center;
   margin-left: 70px;
-}
+}*/
 
 .start-button:hover, .pause-button:hover, .reset-button:hover {
   transform: translateY(-5px);  /* Slight lift effect on hover */
@@ -99,13 +121,13 @@ body
 
 .checklist-container
 {
-  border: 5px outset #ba9bff;
+  border: 2px solid rgb(175, 255, 175);
   border-radius: 35px;
-  background-color: #f79ae4;
-  box-shadow: inset 0 0 15px #ba9bff,
-              inset 0 0 15px  #f79ae4;
-  width: auto;
-  height: auto;
+  box-shadow: 0 0 3px 3px pink;
+  width: 600px;
+  height: 200px;
+  position: relative;
+  z-index: 1;
   font-family: "Gamja Flower", serif;
   font-size: 20px;
   color: white;
@@ -115,14 +137,9 @@ body
   margin: 0 auto;
   background: repeating-linear-gradient(
     white 0px, 
-    white 30px, 
-    #e0e0e0 31px
+    white 29px, /* Adjust the white space */
+    #e0e0e0 30px, /* Start grey line here */
+    #e0e0e0 31px /* End grey line here */
   ); /* Light grey lines */
-  border: 5px solid #ba9bff; 
-  border-radius: 15px;
   padding: 20px;
-  width: 400px;
-  height: auto;
-  font-family: "Gamja Flower", cursive;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }

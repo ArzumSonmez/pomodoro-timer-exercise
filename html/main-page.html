@@ -1,28 +1,72 @@
 <!DOCTYPE html>
-<head>
-  <title>Pomodoro Timer</title>
-  <link rel="stylesheet" href="../styling/main-page.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="frame-container">
-    <div class="div-pomodoro-timer-header">
-      <h1 class="pomodoro-timer-header">Pomodoro Timer</h1>
+<html>
+  <head>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="../styling/main-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="frame-container">
+      <!--OUTTER BORDER-->
+      <svg class="rectangle-svg" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      </svg>
+
+      <div class="div-pomodoro-timer-header">
+        <h1 class="pomodoro-timer-header">Pomodoro Timer</h1>
+      </div>
+      <div class="div-timer-display">
+        00:00
+      </div>
+      <!--BUTTONS-->
+      <div class="button-container">
+        <button class="start-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="210" height="200" viewBox="0 0 200 100">
+            <!-- Pink Cloud (Upper part) -->
+            <rect x="35" y="30" width="50" height="30" rx="60" fill="#FFB6C1" />
+            <rect x="70" y="15" width="60" height="50" rx="60" fill="#FFB6C1" />
+            <rect x="120" y="30" width="50" height="30" rx="60" fill="#FFB6C1" />
+            
+            <!-- Purple Cloud (Lower part) -->
+            <rect x="49" y="37" width="60" height="40" rx="60" fill="#ba9bff" />
+            <rect x="90" y="47" width="50" height="33" rx="60" fill="#ba9bff" />
+            <rect x="30" y="57" width="50" height="25" rx="60" fill="#ba9bff" />
+            <text x="70" y="65" fill="white">Start</text>
+          </svg>
+        </button>
+        <button class="pause-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="210" height="200" viewBox="0 0 200 100">
+            <!-- Pink Cloud (Upper part) -->
+            <rect x="35" y="30" width="50" height="30" rx="60" fill="#FFB6C1" />
+            <rect x="70" y="15" width="60" height="50" rx="60" fill="#FFB6C1" />
+            <rect x="120" y="30" width="50" height="30" rx="60" fill="#FFB6C1" />
+            
+            <!-- Purple Cloud (Lower part) -->
+            <rect x="49" y="37" width="60" height="40" rx="60" fill="#ba9bff" />
+            <rect x="90" y="47" width="50" height="33" rx="60" fill="#ba9bff" />
+            <rect x="30" y="57" width="50" height="25" rx="60" fill="#ba9bff" />
+            <text x="70" y="65" fill="white">Pause</text>
+          </svg>
+        </button>
+        <button class="reset-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="210" height="200" viewBox="0 0 200 100">
+            <!-- Pink Cloud (Upper part) -->
+            <rect x="35" y="30" width="50" height="30" rx="60" fill="#FFB6C1" />
+            <rect x="70" y="15" width="60" height="50" rx="60" fill="#FFB6C1" />
+            <rect x="120" y="30" width="50" height="30" rx="60" fill="#FFB6C1" />
+            
+            <!-- Purple Cloud (Lower part) -->
+            <rect x="49" y="37" width="60" height="40" rx="60" fill="#ba9bff" />
+            <rect x="90" y="47" width="50" height="33" rx="60" fill="#ba9bff" />
+            <rect x="30" y="57" width="50" height="25" rx="60" fill="#ba9bff" />
+            <text x="70" y="65" fill="white">Reset</text>
+          </svg>
+        </button>
+      </div>
+      <div class="checklist-container">
+      </div>
     </div>
-    <div class="div-timer-display">
-      00:00
-    </div>
-    <div class="button-container">
-      <button class="start-button">
-        Start
-    </button>
-    <button class="pause-button">Pause</button>
-    <button class="reset-button">Reset</button>
-    </div>
-    <div class="checklist-container">
-      checklist...
-    </div>
-  </div>
-</body>
+  </body>
+  <script src="../backend/border.js"></script>
+</html>
