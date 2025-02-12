@@ -1,7 +1,6 @@
 body
 {
   display: flex;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -18,16 +17,16 @@ body
   justify-content: center;
   align-items: center;
   background-color: #FAF3F0;
-  margin-left: 120px;
+  margin: 0 auto;
 }
 
 .rectangle-svg {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;  /* This makes it wrap the content width */
-  height: 100%; /* This makes it wrap the content height */
-  pointer-events: none;  /* Prevent interaction with SVG */
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 /* #295F98*/
 .div-pomodoro-timer-header 
