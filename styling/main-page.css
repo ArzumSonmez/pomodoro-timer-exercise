@@ -4,19 +4,19 @@ body
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: beige;
+  background-color:  #ff8fab;
 }
 
 .frame-container
 {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
   position: relative;
   padding: 20px;
   width: 700px;
   height: 700px;
   justify-content: center;
   align-items: center;
-  background-color: #FAF3F0;
+  background-color: #ffc2d1;
   margin: 0 auto;
 }
 
@@ -28,53 +28,40 @@ body
   height: 100%;
   pointer-events: none;
 }
-/* #295F98*/
+
 .div-pomodoro-timer-header 
 {
   border: 2px;
   border-radius: 35px;
   box-shadow: 0 0 3px 3px pink;
-  background-color: #71aef0;
+  background-color: #fb6f92;
   width: 600px;
   height: 70px;
-  font-family: "Gamja Flower", serif;
+  font-family: "Gluten", serif;
   font-size: 20px;
   color: white; 
   display: flexbox;
   justify-content: center;
   align-items: center;
   text-align: center;
-  line-height: 70px;
+  line-height: 80px;
   margin: 30px auto;
 }
 
-/*.div-timer-display
-{
-  border: 10px solid  #ba9bff;
-  border-radius: 35px;
-  width: auto;
-  font-family: "Gamja Flower", serif;
-  font-size: 70px;
-  text-align: center;
-  margin: 10px auto;
-  color: white;
-  justify-content: center;
-  align-items: center;
-}*/
 .div-timer-display {
-  /*border: 2px solid rgb(175, 255, 175);*/
   border-radius: 35px;
   box-shadow: 0 0 3px 3px pink;
-  background-color: #a8c4fd;
+  background-color: #fb6f92;
   width: 600px;
   height: 70px;
-  font-family: "Gamja Flower", serif;
-  font-size: 70px;
-  line-height: 70px;
+  font-family: "Gluten", serif;
+  font-size: 50px;
+  line-height: 80px;
   text-align: center;
   margin: 10px auto;
   color: white;
 }
+
 .start-button, .pause-button, .reset-button
 {
   border: none;
@@ -85,29 +72,12 @@ body
   align-items: center;
   justify-content: center;
   
-  font-family: "Gamja Flower", serif;
+  font-family: "Gluten", serif;
   font-size: 20px;
   font-weight: bold;
   color: white;
-  margin-left: 20px;
+  margin-left: 15px;
 }
-/*.pause-button, .reset-button
-{
-  border: none;
-  border-radius: 50px;
-  background: linear-gradient(145deg, #9cc7ff, #b3daff);
-  width: 130px;
-  height: 50px;
-  
-  margin: 18px auto;
-  position: relative;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 3px 5px rgba(0, 0, 0, 0.1);  /* Soft shadow for the cloud effect */
-  /*cursor: pointer;
-  transition: all 0.3s ease;
-  justify-content: center;
-  align-items: center;
-  margin-left: 70px;
-}*/
 
 .start-button:hover, .pause-button:hover, .reset-button:hover {
   transform: translateY(-5px);  /* Slight lift effect on hover */
@@ -121,14 +91,14 @@ body
 
 .checklist-container
 {
-  border: 2px solid rgb(175, 255, 175);
+  border: 2px solid #fb6f92;
   border-radius: 35px;
-  box-shadow: 0 0 3px 3px pink;
+  box-shadow: 0 0 3px 3px #ffc0cb;
   width: 600px;
   height: 200px;
   position: relative;
   z-index: 1;
-  font-family: "Gamja Flower", serif;
+  font-family: "Gluten", serif;
   font-size: 20px;
   color: white;
   justify-content: center;
@@ -137,9 +107,9 @@ body
   margin: 0 auto;
   background: repeating-linear-gradient(
     white 0px, 
-    white 29px, /* Adjust the white space */
-    #e0e0e0 30px, /* Start grey line here */
-    #e0e0e0 31px /* End grey line here */
-  ); /* Light grey lines */
+    white 29px,
+    #e0e0e0 30px,
+    #e0e0e0 31px
+  );
   padding: 20px;
 }

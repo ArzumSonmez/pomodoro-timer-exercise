@@ -1,6 +1,6 @@
 body 
 {
-  background-color: beige;
+  background-color: #ff8fab;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@ body
   padding: 20px;
   width: 700px;
   height: 700px;
-  background-color: #FAF3F0;
+  background-color:  #ffc2d1;
   margin: 0 auto;
 }
 
@@ -27,19 +27,159 @@ body
   width: 100%;  
   height: 100%;
   pointer-events: none;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.582);
 }
 
 .chibi-san
 {
-  width: 100px;
+  position: relative;
+  width: 150px;
   height: auto;
+  left: 180px;
+  bottom: 100px;
 }
 
-.talking-balloon-svg
+.work-button
 {
+  border: none;
+  background: none;
+  display: inline-flexbox;
+  width: 85px;
+  height: auto;
   position: absolute;
-  justify-content: center;
+  cursor: pointer;
+  bottom: 170px;
+  left: 120px;
+  font-family: "Gluten", serif;
+  font-size: 20px;
+  color: #fb6f92;
+}
+
+.work-button:hover
+{
+  transform: translateY(-5px);
+}
+
+.work-button:active
+{
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+}
+
+.settings-button {
+  border: none;
+  background: transparent;
+  display: inline-flexbox;
+  width: 93px;
+  height: auto;
+  position: absolute;
+  cursor: pointer;
+  bottom: 190px;
+  left: 330px;
+  font-family: "Gluten", serif;
+  font-size: 20px;
+  color: #fb6f92;
+}
+
+.settings-button:hover
+{
+  transform: translateY(-5px);
+}
+
+.settings-button:active
+{
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+}
+
+.setting-san {
+  width: 100%;
+  height: 100%;
+}
+
+.credits-button
+{
+  border:none;
+  background: none;
+  display: inline-flexbox;
+  width: 93px;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+  top: 124px;
+  left: 130px;
+  font-family: "Gluten", "serif";
+  font-size: 20px;
+  color: #fb6f92;
+}
+
+.credits-button:hover
+{
+  transform: translateY(-5px);
+}
+
+.credits-button:active
+{
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+}
+
+.bubble {
+  position: absolute;
+  background-color: #fb6f92;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  max-height: 400px;
+  font-family: "Gluten", serif;
+  font-size: 22px;
+  top: 60px;
+  left: 55px;
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;  /* Position the triangle below the bubble */
+  left: 470px;     /* Adjust left position */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;  /* Creates transparent space for the triangle */
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fb6f92;  /* The color of the triangle */
+}
+
+.cover
+{
+  position: fixed;
+  display: flex;
+  background: url(https://i.pinimg.com/236x/77/22/c8/7722c8069699d25039b71857b9d07e1e.jpg) -80px -80px;
+  color: #D6A7D6;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  font-size: 100px;
+  font-family: "Gluten", "serif";
+  width: 100%;
+  height: 100vh;
+  margin: 50px auto;
+  text-align: center;
   align-items: center;
-  top: 30px;
-  left: 30px;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
