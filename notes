@@ -1,0 +1,40 @@
+Colors used for border:
+#FAF3F0,rgb(169, 245, 169), #71aef0, #FFCACC, #E7BCDE
+
+Pomodoro header color:
+#71aef0
+
+Timer display color:
+#a8c4fd
+
+Upper cloud color:
+#FED9ED
+
+Lower cloud color:
+#E7BCDE
+
+Body background:
+Beige
+
+Outer border width: 750
+Outer rectangle height: 750
+--------------------------------------------------------------------------
+Planing for start page:  
+
+### **1️⃣ Break It Down**
+3. **Interactive Elements** – Add hover effects, maybe sound effects. 
+
+ATTRIBUTIONS:
+SETTINGS BUTTON: Vectors and icons by <a href="https://www.figma.com/community/file/1166831539721848736?ref=svgrepo.com" target="_blank">Solar Icons</a> in CC Attribution License via <a href="https://www.svgrepo.com/" target="_blank">SVG Repo</a>
+
+ATTRIBUTION BUTTON: 
+
+--------------------------------------------------------------------------
+Futures that I plan to add:
+
+-- Make timer interactive.
+-- Make buttons responsive.
+-- Add checklist/to-do list function to the checklist-container.
+-- Make a start page. ✅
+-- Search for animations. (celebration, confetti)
+-- Search for sound.
