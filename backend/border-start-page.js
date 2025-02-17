@@ -7,7 +7,7 @@ const cols = Math.floor(totalWidth / rectSize); // Number of columns for width
 const rows = Math.floor(totalHeight / rectSize); // Number of rows for height
 
 const colors = [
-  "#FAF3F0", "#D4E2D4", "#71aef0", "#FFCACC", "#E7BCDE", "#FAF3F0", "#D4E2D4", "#00CCDD", "#FFCACC", "#E7BCDE",
+  " #fb6f92", " #ff8fab", " #ffb3c6", " #ffc2d1", " #ffe5ec"
 ];
 
 let colorIndex = 0;
