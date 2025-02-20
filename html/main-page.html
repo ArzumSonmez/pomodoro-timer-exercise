@@ -16,12 +16,12 @@
       <div class="div-pomodoro-timer-header">
         <h1 class="pomodoro-timer-header">Pomodoro Timer</h1>
       </div>
-      <div class="div-timer-display">
+      <div class="div-timer-display js-timer-display">
         00:00
       </div>
       <!--BUTTONS-->
       <div class="button-container">
-        <button class="start-button">
+        <button class="start-button" id="js-start-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="210" height="200" viewBox="0 0 200 100">
             <!-- Upper part -->
             <rect x="35" y="30" width="50" height="30" rx="60" fill="#fb6f92" />
@@ -36,7 +36,7 @@
           </svg>
         </button>
         
-        <button class="pause-button">
+        <button class="pause-button" id="js-pause-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="210" height="200" viewBox="0 0 200 100">
             <!-- Upper part -->
             <rect x="35" y="30" width="50" height="30" rx="60" fill="#fb6f92" />
@@ -51,7 +51,7 @@
           </svg>
         </button>
 
-        <button class="reset-button">
+        <button class="reset-button" id="js-reset-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="210" height="200" viewBox="0 0 200 100">
             <!-- Upper part -->
             <rect x="35" y="30" width="50" height="30" rx="60" fill="#fb6f92" />
@@ -71,4 +71,5 @@
     </div>
   </body>
   <script src="../backend/border-main-page.js"></script>
+  <script src="../backend/buttons.js" type="module"></script>
 </html>
