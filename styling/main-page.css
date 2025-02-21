@@ -12,8 +12,8 @@ body
   box-shadow: 0px 0px 20px rgb(255, 255, 255);
   position: relative;
   padding: 20px;
-  width: 700px;
-  height: 700px;
+  width: 900px;
+  height: 900px;
   justify-content: center;
   align-items: center;
   background-color: #ffc2d1;
@@ -58,12 +58,12 @@ body
   font-size: 50px;
   line-height: 80px;
   text-align: center;
-  margin: 10px auto;
+  margin: 50px auto;
   color: white;
 }
 
-.start-button, .pause-button, .reset-button
-{
+
+.start-button, .pause-button, .reset-button, .twentyfive-five-button, .fifty-ten-button, .ninety-twenty-button {
   border: none;
   background: none;
   padding: 0;
@@ -71,20 +71,22 @@ body
   cursor: pointer;
   align-items: center;
   justify-content: center;
-  
+  position: relative;
   font-family: "Gluten", serif;
   font-size: 20px;
   font-weight: bold;
   color: white;
-  margin-left: 15px;
+  margin-left: 65px;
+  bottom: 50px;
 }
 
-.start-button:hover, .pause-button:hover, .reset-button:hover {
+
+.start-button:hover, .pause-button:hover, .reset-button:hover, .twentyfive-five-button:hover, .fifty-ten-button:hover, .ninety-twenty-button:hover {
   transform: translateY(-5px);  /* Slight lift effect on hover */
 }
 
 /*Button press effect when clicked*/
-.start-button:active, .pause-button:active, .reset-button:active {
+.start-button:active, .pause-button:active, .reset-button:active, .twentyfive-five-button:active, .fifty-ten-button:active, .ninety-twenty-button:active {
   transform: scale(0.9);
   transition: transform 0.1s ease;
 }
@@ -94,7 +96,7 @@ body
   border: 2px solid #fb6f92;
   border-radius: 35px;
   box-shadow: 0 0 3px 3px #ffc0cb;
-  width: 600px;
+  width: 800px;
   height: 200px;
   position: relative;
   z-index: 1;
@@ -112,4 +114,5 @@ body
     #e0e0e0 31px
   );
   padding: 20px;
+  bottom: 70px;
 }

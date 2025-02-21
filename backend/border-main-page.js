@@ -1,7 +1,7 @@
 const svg = document.querySelector('.rectangle-svg');
-const rectSize = 13; 
-const totalWidth = 750;
-const totalHeight = 750;
+const rectSize = 14; 
+const totalWidth = 951;
+const totalHeight = 949;
 
 const cols = Math.floor(totalWidth / rectSize); // Number of columns for width
 const rows = Math.floor(totalHeight / rectSize); // Number of rows for height
