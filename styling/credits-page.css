@@ -1,0 +1,84 @@
+body 
+{
+  background-color: #ff8fab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-div{
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  position: relative;
+  padding: 20px;
+  width: 900px;
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc2d1;
+  margin: 0 auto;
+}
+
+.credits-border{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;  
+  height: 100%;
+  pointer-events: none;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.582);
+}
+
+.char-girl
+{
+  position: relative;
+  width: 200px;
+  height: auto;
+  right: 500px;
+  top: 90px;
+}
+
+.bubble {
+  position: absolute;
+  background-color: #fb6f92;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 800px;
+  max-height: 400px;
+  font-family: "Gluten", serif;
+  font-size: 22px;
+  top: 130px;
+  left: 160px;
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;  /* Position the triangle below the bubble */
+  left: 600px;     /* Adjust left position */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;  /* Creates transparent space for the triangle */
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fb6f92;  /* The color of the triangle */
+}
+
+.second-bubble {
+  position: absolute;
+  background-color: #fb6f92;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 800px;
+  max-height: 400px;
+  font-family: "Gluten", serif;
+  font-size: 22px;
+  bottom: 150px;
+  left: 160px;
+}
+
+.name
+{
+  text-align: right;
+}
