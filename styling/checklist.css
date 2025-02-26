@@ -1,0 +1,43 @@
+.input-text{
+  flex: 1;
+  border: 2px solid #fb6f92;
+  border-radius: 35px;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+.input-button-wrapper {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  flex-wrap: wrap; 
+}
+
+.add-task-button, .delete-task-button {
+  border: 2px solid #fb6f92;
+  background-color: white;
+  border-radius: 35px;
+  padding: 10px;
+  position: relative;
+  width: 70px;
+}
+
+.delete-task-button{
+  margin-left: 10px;
+}
+.add-task-button:hover, .delete-task-button:hover{
+  transform: translateY(-2px);
+}
+
+.add-task-button:active, .delete-task-button:active{
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+}
+
+.newTask{
+  color: #fb6f92;
+  padding: 5px;
+  padding-bottom: 9px;
+}

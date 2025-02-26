@@ -3,6 +3,7 @@
   <head>
     <title>Pomodoro Timer - Main Page</title>
     <link rel="stylesheet" href="../styling/main-page.css">
+    <link rel="stylesheet" href="../styling/checklist.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Gluten:wght@100..900&display=swap" rel="stylesheet">
@@ -109,9 +110,16 @@
               </svg></button>
       </div>
       <div class="checklist-container">
+        <div class="input-button-wrapper">
+          <input class="input-text" id="input-place" placeholder="Add a task!">
+          <button class="add-task-button" id="add-task-button">Add</button>
+          <button class="delete-task-button" id="delete-task-button">Delete</button>
+        </div>
+        <ul id="task-list"></ul>
       </div>
     </div>
   </body>
   <script src="../backend/border-main-page.js"></script>
   <script src="../backend/buttons.js" type="module"></script>
+  <script src="../backend/checklist.js"></script>
 </html>

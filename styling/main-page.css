@@ -96,7 +96,8 @@ body
   border: 2px solid #fb6f92;
   border-radius: 35px;
   box-shadow: 0 0 3px 3px #ffc0cb;
-  width: 800px;
+  width: 80%;
+  max-width: 800px;
   height: 200px;
   position: relative;
   z-index: 1;
@@ -107,12 +108,12 @@ body
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  background: repeating-linear-gradient(
-    white 0px, 
-    white 29px,
-    #e0e0e0 30px,
-    #e0e0e0 31px
-  );
+  background: #ffe5ec;
   padding: 20px;
-  bottom: 70px;
+  bottom: 7%;
+  left: 0;
+
+  overflow-y: auto; /* This adds a vertical scrollbar when needed */
+  scrollbar-width: thin; /* Optional: Makes the scrollbar thinner */
+  scrollbar-color: #fb6f92 transparent; /* Optional: Custom scrollbar colors */
 }
