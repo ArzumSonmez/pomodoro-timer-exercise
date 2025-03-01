@@ -40,4 +40,42 @@
   color: #fb6f92;
   padding: 5px;
   padding-bottom: 9px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.list-checkbox {
+  appearance: none; /* Removes default checkbox */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fb6f92; /* Pink border */
+  border-radius: 5px; /* Slightly rounded corners */
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.list-checkbox:checked {
+  background-color: #fb6f92; /* Pink when checked */
+  border-color: #e85d75;
+}
+
+.list-checkbox:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
 }
