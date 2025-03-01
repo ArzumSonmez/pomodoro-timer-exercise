@@ -16,13 +16,16 @@ clicked.addEventListener('click', () =>
     checkBox.type = 'checkbox';
     checkBox.classList.add('list-checkbox');
 
-    checkBox.addEventListener('change', () => {
-      if (checkBox.checked) {
-        newTask.classList.add('completed');
+    newTask.addEventListener("change", (event) => {
+      if (event.target.checked) {
+        newTask.style.textDecoration = "line-through";
+        newTask.style.color = "#888";
       } else {
-        newTask.classList.remove,('completed');
+        newTask.style.textDecoration = "none"
+        newTask.style.color = "";
       }
     });
+    
 
     newTask.prepend(checkBox); 
 

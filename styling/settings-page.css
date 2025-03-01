@@ -1,0 +1,30 @@
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:  #ff8fab;
+}
+
+.frame-container
+{
+  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  position: relative;
+  padding: 20px;
+  width: 900px;
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc2d1;
+  margin: 0 auto;
+}
+
+.rectangle-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
