@@ -4,7 +4,18 @@ import { resetTimer } from "./timer.js";
 import { setTimerOption } from "./timer.js";
 
 const clickSound = new Audio('../audio/mouse-click-290204.mp3');
-const clockSound = new Audio('../audio/tick-tock-104746.mp3');
+
+function applyMuteState(isMuted) {
+  clickSound.volume = isMuted ? 0 : 1;
+}
+
+// Apply mute state when the page loads
+applyMuteState(localStorage.getItem("mute") === "true");
+
+// Listen for mute toggle event
+document.addEventListener("muteToggle", (event) => {
+  applyMuteState(event.detail);
+});
 
 const startButton = document.getElementById("js-start-button");
 const pauseButton = document.getElementById("js-pause-button");

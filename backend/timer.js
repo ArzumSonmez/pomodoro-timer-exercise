@@ -6,8 +6,21 @@ let workDuration;
 let breakDuration;
 
 const timerDisplay = document.querySelector('.js-timer-display');
+
 export const switchSessionSound = new Audio('../audio/success-221935.mp3');
 export const clockSound = new Audio('../audio/tick-tock-104746.mp3');
+
+function applyMuteState(isMuted){
+  switchSessionSound.volume = isMuted ? 0:1;
+  clockSound.volume = isMuted ? 0:1;
+}
+
+applyMuteState(localStorage.getItem("mute") === "true");
+
+// Listen for mute toggle event
+document.addEventListener("muteToggle", (event) => {
+  applyMuteState(event.detail);
+})
 
 workDuration = 1500000;
 breakDuration = 300000;
