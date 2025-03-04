@@ -6,8 +6,8 @@ let workDuration;
 let breakDuration;
 
 const timerDisplay = document.querySelector('.js-timer-display');
-const switchSessionSound = new Audio('../audio/success-221935.mp3');
-const clockSound = new Audio('../audio/tick-tock-104746.mp3');
+export const switchSessionSound = new Audio('../audio/success-221935.mp3');
+export const clockSound = new Audio('../audio/tick-tock-104746.mp3');
 
 workDuration = 1500000;
 breakDuration = 300000;

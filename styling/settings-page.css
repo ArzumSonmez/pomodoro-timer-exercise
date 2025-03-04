@@ -1,5 +1,4 @@
-body
-{
+body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,8 +6,7 @@ body
   background-color:  #ff8fab;
 }
 
-.frame-container
-{
+.frame-container {
   box-shadow: 0px 0px 20px rgb(255, 255, 255);
   position: relative;
   padding: 20px;
@@ -28,3 +26,69 @@ body
   height: 100%;
   pointer-events: none;
 }
+
+.settings-title {
+  border: 2px;
+  border-radius: 35px;
+  box-shadow: 0 0 3px 3px pink;
+  background-color: #fb6f92;
+  width: 600px;
+  height: 70px;
+  font-family: "Gluten", serif;
+  font-size: 30px;
+  color: white; 
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 80px;
+  margin: 30px auto;
+}
+
+.mute-button, .dark-mode-button {
+  width: 30%;
+  border: none;
+  background: none;
+  display: flex 1;
+  position: relative;
+  top: 20%;
+  left: 21%;
+  margin: 30px auto;
+}
+
+.mute-button-img {
+  width: 37%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.close-settings-button{
+  width: 30%;
+  border: none;
+  background: none;
+  display: flex 1;
+  position: relative;
+  top: 50%;
+  right: 25%;
+}
+
+.mute-button:hover, .dark-mode-button:hover, .close-settings-button:hover  {
+ transform: translateY(-5px);
+}
+
+.mute-button:active, .dark-mode-button:active, .close-settings-button:active{
+  transform: scale(0.9);
+  transition: transform 0.1s ease;
+}
+
+.button-text
+{
+  font-family: "Gluten", serif;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  left: 30%;
+}
+

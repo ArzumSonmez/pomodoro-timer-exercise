@@ -71,7 +71,17 @@ body {
   position: absolute;
   width: 200px;
   height: auto;
-  left: 50%;
+  left: 60%;
+  bottom: 300px;
+  transform: translateX(-50%);
+}
+
+.chibi-san-male
+{
+  position: absolute;
+  width: 200px;
+  height: 195px;
+  left: 40%;
   bottom: 300px;
   transform: translateX(-50%);
 }
