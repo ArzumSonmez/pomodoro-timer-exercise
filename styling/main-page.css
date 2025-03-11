@@ -40,7 +40,7 @@ body
   font-family: "Gluten", serif;
   font-size: 20px;
   color: white; 
-  display: flexbox;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -63,7 +63,7 @@ body
 }
 
 
-.start-button, .pause-button, .reset-button, .twentyfive-five-button, .fifty-ten-button, .ninety-twenty-button {
+.start-button, .pause-button, .reset-button, .twentyfive-five-button, .fifty-ten-button, .ninety-twenty-button, .back-button {
   border: none;
   background: none;
   padding: 0;
@@ -80,13 +80,19 @@ body
   bottom: 50px;
 }
 
+.back-button{
+ position: absolute; 
+ margin: 0 auto;
+ padding: 0;
+ bottom: 83%;
+}
 
-.start-button:hover, .pause-button:hover, .reset-button:hover, .twentyfive-five-button:hover, .fifty-ten-button:hover, .ninety-twenty-button:hover {
+.start-button:hover, .pause-button:hover, .reset-button:hover, .twentyfive-five-button:hover, .fifty-ten-button:hover, .ninety-twenty-button:hover, .back-button:hover {
   transform: translateY(-5px);  /* Slight lift effect on hover */
 }
 
 /*Button press effect when clicked*/
-.start-button:active, .pause-button:active, .reset-button:active, .twentyfive-five-button:active, .fifty-ten-button:active, .ninety-twenty-button:active {
+.start-button:active, .pause-button:active, .reset-button:active, .twentyfive-five-button:active, .fifty-ten-button:active, .ninety-twenty-button:active, .back-button:active {
   transform: scale(0.9);
   transition: transform 0.1s ease;
 }

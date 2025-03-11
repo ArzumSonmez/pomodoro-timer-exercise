@@ -24,10 +24,11 @@ body
   display: flex;
   justify-content: space-around; /* Even spacing */
   align-items: center;
-  position: absolute;
-  bottom: 1%; /* Adjust height from bottom */
+  position: relative;
   width: 100%;
   padding: 10px;
+  top: 25%;
+  right: 10%;
 }
 
 
@@ -46,7 +47,7 @@ body
   position: relative;
   width: 200px;
   height: auto;
-  left: 20%;
+  left: 60%;
   bottom: 7%;
 }
 
@@ -54,16 +55,15 @@ body
 {
   border: none;
   background: none;
-  display: inline-flexbox;
   width: 85px;
   height: auto;
   cursor: pointer;
   font-family: "Gluten", serif;
   font-size: 20px;
   color: #fb6f92;
-  margin: 0 1px;
+  margin: 0 auto;
   position: relative;
-  bottom: 190px;
+  bottom: px;
 }
 
 .work-button:hover
@@ -80,7 +80,6 @@ body
 .settings-button {
   border: none;
   background: transparent;
-  display: inline-flexbox;
   width: 93px;
   height: auto;
   cursor: pointer;
@@ -89,7 +88,6 @@ body
   color: #fb6f92;
   margin: 0 10px;
   position: relative;
-  bottom: 190px;
 }
 
 .settings-button:hover
@@ -112,7 +110,6 @@ body
 {
   border:none;
   background: none;
-  display: inline-flexbox;
   width: 93px;
   height: auto;
   cursor: pointer;
@@ -121,7 +118,6 @@ body
   color: #fb6f92;
   margin: 0;
   position: relative;
-  bottom: 190px;
 }
 
 .credits-button:hover
