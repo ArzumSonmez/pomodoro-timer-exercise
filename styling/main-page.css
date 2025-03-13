@@ -1,22 +1,52 @@
+/* Default (Light Mode) */
+:root {
+  --bg-color: #ff8fab;
+  --frame-bg: #ffc2d1;
+  --header-bg: #fb6f92;
+  --text-color: white;
+  --box-shadow: pink;
+  --border-color: #fb6f92;
+  --checklist-bg: #ffe5ec;
+  --scrollbar-color: #fb6f92;
+  --primary-color: #fb6f92;
+  --secondary-color: #ff8fab;
+  --theme-button: "#fb6f92";
+}
+
+/* Dark Mode */
+.dark-mode {
+  --bg-color: #121212;
+  --frame-bg: #0A2647;
+  --header-bg: #205295;
+  --text-color: #ffffff;
+  --box-shadow: #144272;
+  --border-color: #205295;
+  --checklist-bg: #205295;
+  --scrollbar-color: #144272;
+  --primary-color: #144272;
+  --secondary-color: #2C74B3;
+  --theme-button: #144272;
+}
+
 body
 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color:  #ff8fab;
+  background-color: var(--bg-color);
 }
 
 .frame-container
 {
-  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px var(--box-shadow);
   position: relative;
   padding: 20px;
   width: 900px;
   height: 900px;
   justify-content: center;
   align-items: center;
-  background-color: #ffc2d1;
+  background-color: var(--frame-bg);
   margin: 0 auto;
 }
 
@@ -33,13 +63,13 @@ body
 {
   border: 2px;
   border-radius: 35px;
-  box-shadow: 0 0 3px 3px pink;
-  background-color: #fb6f92;
+  box-shadow: 0 0 3px 3px var(--box-shadow);
+  background-color: var(--header-bg);
   width: 600px;
   height: 70px;
   font-family: "Gluten", serif;
   font-size: 20px;
-  color: white; 
+  color: var(--text-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,8 +80,8 @@ body
 
 .div-timer-display {
   border-radius: 35px;
-  box-shadow: 0 0 3px 3px pink;
-  background-color: #fb6f92;
+  box-shadow: 0 0 3px 3px var(--box-shadow);
+  background-color: var(--header-bg);
   width: 600px;
   height: 70px;
   font-family: "Gluten", serif;
@@ -59,7 +89,7 @@ body
   line-height: 80px;
   text-align: center;
   margin: 50px auto;
-  color: white;
+  color: var(--text-color);
 }
 
 
@@ -75,7 +105,7 @@ body
   font-family: "Gluten", serif;
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: var(--text-color);
   margin-left: 65px;
   bottom: 50px;
 }
@@ -99,9 +129,9 @@ body
 
 .checklist-container
 {
-  border: 2px solid #fb6f92;
+  border: 2px solid var(--border-color);
   border-radius: 35px;
-  box-shadow: 0 0 3px 3px #ffc0cb;
+  box-shadow: 0 0 3px 3px var(--box-shadow);
   width: 80%;
   max-width: 800px;
   height: 200px;
@@ -109,17 +139,17 @@ body
   z-index: 1;
   font-family: "Gluten", serif;
   font-size: 20px;
-  color: white;
+  color: var(--text-color);
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  background: #ffe5ec;
+  background: var(--checklist-bg);
   padding: 20px;
   bottom: 7%;
   left: 0;
 
   overflow-y: auto; /* This adds a vertical scrollbar when needed */
   scrollbar-width: thin; /* Optional: Makes the scrollbar thinner */
-  scrollbar-color: #fb6f92 transparent; /* Optional: Custom scrollbar colors */
+  scrollbar-color: var(--scrollbar-color) transparent; /* Optional: Custom scrollbar colors */
 }

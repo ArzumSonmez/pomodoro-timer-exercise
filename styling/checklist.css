@@ -1,6 +1,24 @@
+.root{
+  --border-color: #fb6f92;
+  --bg-color: white;
+  --new-task-color: #fb6f92;
+  --cb-border: #fb6f92;
+  --checked-bg: #fb6f92;
+  --checked-border: #e85d75;
+}
+
+.dark-mode {
+  --border-color: #205295;
+  --bg-color: black;
+  --new-task-color: #0A2647;
+  --cb-border: #0A2647;
+  --checked-bg: #144272;
+  --checked-border: #2C74B3;
+}
+
 .input-text{
   flex: 1;
-  border: 2px solid #fb6f92;
+  border: 2px solid var(--border-color);
   border-radius: 35px;
   padding: 10px;
   position: relative;
@@ -16,7 +34,7 @@
 }
 
 .add-task-button, .delete-task-button {
-  border: 2px solid #fb6f92;
+  border: 2px solid var(--border-color);
   background-color: white;
   border-radius: 35px;
   padding: 10px;
@@ -37,7 +55,7 @@
 }
 
 .newTask{
-  color: #fb6f92;
+  color:  var(--new-task-color);
   padding: 5px;
   padding-bottom: 9px;
   display: flex;
@@ -55,7 +73,7 @@
   appearance: none; /* Removes default checkbox */
   width: 20px;
   height: 20px;
-  border: 2px solid #fb6f92; /* Pink border */
+  border: 2px solid var(--border-color); /* Pink border */
   border-radius: 5px; /* Slightly rounded corners */
   background-color: white;
   cursor: pointer;
@@ -65,8 +83,8 @@
 }
 
 .list-checkbox:checked {
-  background-color: #fb6f92; /* Pink when checked */
-  border-color: #e85d75;
+  background-color: var(--cb-border); /* Pink when checked */
+  border-color: var(--checked-border);
 }
 
 .list-checkbox:checked::after {
