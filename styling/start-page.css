@@ -1,6 +1,26 @@
+:root{
+  --bg-color: #ff8fab;
+  --frame-bg: #ffc2d1;
+  --box-shadow: rgba(0, 0, 0, 0.2);
+  --container-bg: #ffc2d1;
+  --button-text: #fb6f92;
+  --bubble-bg: #fb6f92;
+  --text-color: white;
+}
+
+.dark-mode{
+  --bg-color: #121212;
+  --frame-bg: #0A2647;
+  --box-shadow: #144272;
+  --container-bg: #333;
+  --button-text: #2C74B3;
+  --bubble-bg: #2C74B3;
+  --text-color: white;
+}
+
 body 
 {
-  background-color: #ff8fab;
+  background-color: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,11 +32,11 @@ body
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: 0px 0 px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px var(--box-shadow);
   padding: 20px;
   width: 900px;
   height: 900px;
-  background-color:  #ffc2d1;
+  background-color: var(--frame-bg);
   margin: 0 auto;
 }
 
@@ -32,7 +52,7 @@ body
 }
 
 
-.outer-start-border{
+.rectangle-svg{
   position: absolute;
   left: 0;
   top: 0;
@@ -60,10 +80,9 @@ body
   cursor: pointer;
   font-family: "Gluten", serif;
   font-size: 20px;
-  color: #fb6f92;
+  color: var(--button-text);
   margin: 0 auto;
   position: relative;
-  bottom: px;
 }
 
 .work-button:hover
@@ -85,7 +104,7 @@ body
   cursor: pointer;
   font-family: "Gluten", serif;
   font-size: 20px;
-  color: #fb6f92;
+  color: var(--button-text);
   margin: 0 10px;
   position: relative;
 }
@@ -115,7 +134,7 @@ body
   cursor: pointer;
   font-family: "Gluten", "serif";
   font-size: 20px;
-  color: #fb6f92;
+  color: var(--button-text);
   margin: 0;
   position: relative;
 }
@@ -133,8 +152,8 @@ body
 
 .bubble {
   position: absolute;
-  background-color: #fb6f92;
-  color: white;
+  background-color: var(--bubble-bg);
+  color: var(--text-color);
   padding: 15px;
   border-radius: 10px;
   max-width: 800px;
@@ -154,7 +173,7 @@ body
   height: 0;
   border-left: 10px solid transparent;  /* Creates transparent space for the triangle */
   border-right: 10px solid transparent;
-  border-top: 10px solid #fb6f92;  /* The color of the triangle */
+  border-top: 10px solid var(--bubble-bg);  /* The color of the triangle */
 }
 
 .cover
