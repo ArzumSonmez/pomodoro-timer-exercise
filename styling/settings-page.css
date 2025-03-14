@@ -1,20 +1,40 @@
+:root{
+  --bg-color: #ff8fab;
+  --frame-bg: #ffc2d1;
+  --header-bg: #fb6f92;
+  --text-color: white;
+  --box-shadow: pink;
+  --border-color: #fb6f92;
+  --button-color: #fb6f92;
+}
+
+.dark-mode{
+  --bg-color: #121212;
+  --frame-bg: #0A2647;
+  --header-bg: #205295;
+  --text-color: #ffffff;
+  --box-shadow: #144272;
+  --border-color: #205295;
+  --button-color: #205295;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color:  #ff8fab;
+  background-color:  var(--bg-color);
 }
 
 .frame-container {
-  box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px var(--box-shadow);
   position: relative;
   padding: 20px;
   width: 900px;
   height: 900px;
   justify-content: center;
   align-items: center;
-  background-color: #ffc2d1;
+  background-color: var(--frame-bg);
   margin: 0 auto;
 }
 
@@ -30,8 +50,8 @@ body {
 .settings-title {
   border: 2px;
   border-radius: 35px;
-  box-shadow: 0 0 3px 3px pink;
-  background-color: #fb6f92;
+  box-shadow: 0 0 3px 3px var(--box-shadow);
+  background-color: var(--header-bg);
   width: 600px;
   height: 70px;
   font-family: "Gluten", serif;
@@ -81,7 +101,7 @@ body {
   transition: transform 0.1s ease;
 }
 
-.button-text
+.button-mute-text, .button-close-text, .button-theme-text
 {
   font-family: "Gluten", serif;
   font-size: 22px;
