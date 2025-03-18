@@ -10,7 +10,8 @@
   --scrollbar-color: #fb6f92;
   --primary-color: #fb6f92;
   --secondary-color: #ff8fab;
-  --theme-button: "#fb6f92";
+  --theme-button: #fb6f92;
+  --checklist-text-color: #fb6f92;
 }
 
 /* Dark Mode */
@@ -18,7 +19,7 @@
   --bg-color: #121212;
   --frame-bg: #0A2647;
   --header-bg: #205295;
-  --text-color: #ffffff;
+  --text-color: white;
   --box-shadow: #144272;
   --border-color: #205295;
   --checklist-bg: #205295;
@@ -26,6 +27,7 @@
   --primary-color: #144272;
   --secondary-color: #2C74B3;
   --theme-button: #144272;
+  --checklist-text-color: #144272;
 }
 
 body
@@ -139,7 +141,7 @@ body
   z-index: 1;
   font-family: "Gluten", serif;
   font-size: 20px;
-  color: var(--text-color);
+  color: var(--checklist-text-color);
   justify-content: center;
   align-items: center;
   text-align: center;
