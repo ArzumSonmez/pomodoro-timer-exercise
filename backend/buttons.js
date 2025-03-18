@@ -39,7 +39,7 @@ const twfButton = document.getElementById("tw-five-button");
 const fiveTenButton = document.getElementById("fifty-ten-button");
 const nineTwButton = document.getElementById("ninety-twenty-button");
 
-twfButton.addEventListener("click", () => { setTimerOption(10000, 5000); // 25 min work, 5 min break
+twfButton.addEventListener("click", () => { setTimerOption(1500000, 300000); // 25 min work, 5 min break
   clickSound.play();
 });
 fiveTenButton.addEventListener("click", () => { setTimerOption(3000000, 600000); // 50 min work, 10 min break
