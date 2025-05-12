@@ -18,6 +18,15 @@
   --button-color: #205295;
 }
 
+body.light-mode {
+    background-color: #fb6f92;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #0A2647;
+}
+
 body {
   display: flex;
   justify-content: center;

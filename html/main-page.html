@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>Pomodoro Timer - Main Page</title>
+
+    <script>
+    const theme = localStorage.getItem('theme') || 'light';
+    document.body?.classList.add(theme === 'dark' ? 'dark-mode' : 'light-mode');
+    document.documentElement?.classList.add(theme === 'dark' ? 'dark-mode' : 'light-mode');
+    </script>
     <link rel="stylesheet" href="../styling/main-page.css">
     <link rel="stylesheet" href="../styling/checklist.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">

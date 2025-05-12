@@ -16,6 +16,15 @@
   --box-shadow: #144272;
 }
 
+body.light-mode {
+    background-color: #fb6f92;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #0A2647;
+}
+
 body {
   background-color: var(--bg-color);
   display: flex;

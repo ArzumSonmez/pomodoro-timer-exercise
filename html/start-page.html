@@ -5,6 +5,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Gluten:wght@100..900&display=swap" rel="stylesheet">
   <head>
+
+      <script>
+    const theme = localStorage.getItem('theme') || 'light';
+    document.body?.classList.add(theme === 'dark' ? 'dark-mode' : 'light-mode');
+    document.documentElement?.classList.add(theme === 'dark' ? 'dark-mode' : 'light-mode');
+  </script>
     <title>Pomodoro Timer - Welcome</title>
   </head>
     <body>

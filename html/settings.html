@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script>
+    const theme = localStorage.getItem('theme') || 'light';
+    document.body?.classList.add(theme === 'dark' ? 'dark-mode' : 'light-mode');
+    document.documentElement?.classList.add(theme === 'dark' ? 'dark-mode' : 'light-mode');
+  </script>
+
     <link rel="stylesheet" href="../styling/settings-page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
